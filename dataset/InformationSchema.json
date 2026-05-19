@@ -1,0 +1,12 @@
+{
+	"name": "InformationSchema",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "migratiodb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
