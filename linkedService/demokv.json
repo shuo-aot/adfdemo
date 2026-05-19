@@ -1,0 +1,10 @@
+{
+	"name": "demokv",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-migratiodemo.vault.azure.net/"
+		}
+	}
+}
