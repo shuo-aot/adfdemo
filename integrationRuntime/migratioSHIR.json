@@ -1,0 +1,6 @@
+{
+	"name": "migratioSHIR",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

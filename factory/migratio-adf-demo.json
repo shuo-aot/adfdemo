@@ -1,0 +1,15 @@
+{
+	"name": "migratio-adf-demo",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "17a6bbbd-b9ec-4ca1-93d4-230d5ed08994",
+		"tenantId": "d34e6929-73f4-48ce-bac5-faf8cfea0be6"
+	}
+}
