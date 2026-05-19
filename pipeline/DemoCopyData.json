@@ -29,7 +29,7 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "LoopThroughAllTables",
 				"type": "ForEach",
 				"dependsOn": [
 					{
