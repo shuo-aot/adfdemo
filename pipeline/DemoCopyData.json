@@ -47,7 +47,7 @@
 					},
 					"activities": [
 						{
-							"name": "Copy data1",
+							"name": "MoveData",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -67,7 +67,8 @@
 								"sink": {
 									"type": "SqlServerSink",
 									"writeBehavior": "insert",
-									"sqlWriterUseTableLock": false
+									"sqlWriterUseTableLock": false,
+									"tableOption": "autoCreate"
 								},
 								"enableStaging": false,
 								"translator": {
@@ -98,7 +99,14 @@
 							"outputs": [
 								{
 									"referenceName": "sinkDataset",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"pSchema": "Test",
+										"pTable": {
+											"value": "@item().DestTable",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
