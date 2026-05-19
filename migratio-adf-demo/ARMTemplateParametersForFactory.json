@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "migratio-adf-demo"
+		},
+		"migratiodb_password": {
+			"value": ""
+		},
+		"demokv_properties_typeProperties_baseUrl": {
+			"value": "https://kv-migratiodemo.vault.azure.net/"
+		},
+		"migratiodb_properties_typeProperties_server": {
+			"value": "20.63.101.180"
+		},
+		"migratiodb_properties_typeProperties_database": {
+			"value": "WideWorldImportersDW"
+		},
+		"migratiodb_properties_typeProperties_userName": {
+			"value": "dbadmin"
+		}
+	}
+}
