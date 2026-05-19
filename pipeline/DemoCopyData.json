@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "SELECT \n    TABLE_SCHEMA AS SourceSchema,\n    TABLE_NAME AS SourceTable,\n    CONCAT(TABLE_SCHEMA, '_', TABLE_NAME) AS DestTable\nFROM INFORMATION_SCHEMA.TABLES\nWHERE TABLE_TYPE = 'BASE TABLE'\n  AND TABLE_SCHEMA IN ('schema1', 'schema2', 'schema3');",
+						"sqlReaderQuery": "SELECT \n    TABLE_SCHEMA AS SourceSchema,\n    TABLE_NAME AS SourceTable,\n    CONCAT(TABLE_SCHEMA, '_', TABLE_NAME) AS DestTable\nFROM INFORMATION_SCHEMA.TABLES\nWHERE TABLE_TYPE = 'BASE TABLE'\n",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
