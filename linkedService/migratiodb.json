@@ -1,17 +1,27 @@
 {
 	"name": "migratiodb",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
 			"server": "20.63.101.180",
-			"database": "WideWorldImportersDW",
+			"database": "IntegrationDB",
 			"encrypt": "mandatory",
 			"trustServerCertificate": true,
 			"authenticationType": "SQL",
 			"userName": "dbadmin",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEJFRDg4QTFCLTJCQjMtNEZCQi1BRTJCLUQ2Njg1M0U2NjU2MF85MjliNDAyYy05NWM4LTQ3NTktOGU3Ny02ZmMyYTY0OTllOTAiDQp9"
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "demokv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqldbapassword"
+			},
+			"alwaysEncryptedSettings": {
+				"alwaysEncryptedAkvAuthType": "ManagedIdentity"
+			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
